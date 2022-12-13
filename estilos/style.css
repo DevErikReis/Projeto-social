@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+html, body {
+    height: 100vh; /*Aqui estamos usando 100% da altura total do navegador */
+    width: 100vw; /* aqui será a largura total*/
+    background-color: black;
+    
+}
+body{
+    /* consigo escolher a posição da imagem de fundo, aqui no caso eu coloquei do topo para baixo e no centro.*/
+    background: url('../imagens/fundo\ madeira.jpg') no-repeat top center;
+    background-size: cover; /* 'cover' serve para a nossa imagem que esta no background cobrir a tela inteira*/
+
+}
+/* O elemento <main> define o conteúdo principal dentro do <body> em seu documento ou aplicação. Entende-se como conteúdo principal aquele relacionado diretamente com o tópico central da página ou com a funcionalidade central da aplicação*/
+main {
+position: relative;
+height: 100vh;
+
+
+
+}
+/* quando usamos o ID em alguma tag nós executamos o css dele aqui, ou seja, é aqui que nós vamos dar estilo e fazer alterações na nossa tag, aqui no caso colocamos em nossa saction */
+#telefone {
+    /* a posição absolute nos da a opção de mexer o nosso conteúdo, aqui no caso nós vamos centralizar ele, vamos usar a tag TOP 50% e a left 50%, porém essa parte que no momento esta azul no nosso site vai para o canto inferior direito, que é na parte de baixo do lado direito, para conseguir arrumar isso vamos colocar 50% para o lado oposto de ambos, colocando 50% - pra cima e 50- pra esquerda usando a tag transform: translate(-50%, -50%);
+    Perceba que o MAIN é o conteúdo do lado de fora e está verde e o nosso conteúdo selector#telefone é o azul de dentro.
+    Quando colocamos uma foto ou arquivo no nosso site, os ".." dois pontos serve para voltarmos uma página, aqui por exemplo estamos no style.css que está dentro da passa de estilos, então fivemos que voltar uma pasta e entrar na pasta de imagens para adicionar nossa foto, veja abaixo a tag.
+     background: url('../imagens/frame-iphone.png');
+*/ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+    height: 512px;
+    width: 512px;    
+    background: url('../imagens/frame-iphone.png') no-repeat;
+    
+}
+iframe#tela {
+    position: relative;
+    top: 55px;
+    left: 145px;
+    width: 221px;
+    height: 392px;
+    /* Aqui é a nossa configuração do iframe, nós criamos o home.html para essa configuração ser possive, exacutamos dela dentro iframe, ou seja, o home.html está dentro do index.html graças ao iframe.*/
+
+}

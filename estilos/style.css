@@ -46,9 +46,31 @@ height: 100vh;
 iframe#tela {
     position: relative;
     top: 55px;
-    left: 145px;
-    width: 221px;
+    left: 129px;
+    width: 253px;
     height: 392px;
     /* Aqui é a nossa configuração do iframe, nós criamos o home.html para essa configuração ser possive, exacutamos dela dentro iframe, ou seja, o home.html está dentro do index.html graças ao iframe.*/
 
 }
+#redes-sociais {/* Criamos essa tag porque queremos mover o conteúdo que está na nossa section redes sociais, a de baixo está também configurando a tag img e não queremos isso. Colocamos text aling rigth para nosso conteúdo ficar ao lado direito da tela.*/
+    text-align: right;
+
+}
+#redes-sociais img {
+    /*aqui estamos configurando os nossos logos, peguei os logos da internet, porém esses logos est~so muito grandes, então coloquei width 50px, quando vc configura apenas a largura automaticamente a altura também fica do mesmo tamanho, ou seja, 50x50*/
+width: 50px; 
+margin: 10px;
+border-radius: 30%; /*essa tag serv para arredondar nosso conteúdo, no caso é nossos logos*/
+box-sizing: border-box; /* colocamos um efeito com o hover para quando passar o mouse em cima ter uma animação, porém todos estão se movendo quando passa o mouse por cima do primeiro por exemplo, como se todos estivessem se movendo juntos,colocando essa tag a borda ira fazer parte de cara objeto, ou seja, de cada logo, como se estivessem soltos agora.A borda agora faz parte da caixa.*/
+}
+#redes-sociais img:hover {
+    /* Essa tag hover ela serve para quando passar o mouse por cima da nossa imagem ou link as configurações colocadas aqui dentro apareção, exemplo: eu passsar o mouse por cima do link e ele ficar azul, ou atpe mesmo com a letra maior. */
+    border: 2px solid rgb(238, 234, 234); 
+    box-shadow: 1px 1px 2px #b39b9b;
+}
+
+#youtube:hover {
+    
+}
+
+    

@@ -36,8 +36,6 @@ height: 100vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
-
     height: 512px;
     width: 512px;    
     background: url('../imagens/frame-iphone.png') no-repeat;
@@ -49,7 +47,7 @@ iframe#tela {
     left: 129px;
     width: 253px;
     height: 392px;
-    /* Aqui é a nossa configuração do iframe, nós criamos o home.html para essa configuração ser possive, exacutamos dela dentro iframe, ou seja, o home.html está dentro do index.html graças ao iframe.*/
+    /* Aqui é a nossa configuração do iframe, nós criamos o home.html para essa configuração ser possivel, executamos ela dentro iframe, ou seja, o home.html está dentro do index.html graças ao iframe.*/
 
 }
 #redes-sociais {/* Criamos essa tag porque queremos mover o conteúdo que está na nossa section redes sociais, a de baixo está também configurando a tag img e não queremos isso. Colocamos text aling rigth para nosso conteúdo ficar ao lado direito da tela.*/
